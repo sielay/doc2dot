@@ -3,9 +3,16 @@
  * @param a
  * @param b
  * @dot tester -> noop
- * @dot tester ${classA}
- * @dot-class classA [color=blue]
+ * @dot {ClassA} tester
+ * @dot-type ClassA [color=blue]
  */
 function tester(a, b) {
 
 }
+
+/**
+ * @dot {RelationB} noop -> tester 
+ * @dot-type RelationB [shape=arrow]
+ */
+
+ // @dot noop -> boop
