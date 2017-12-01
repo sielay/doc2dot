@@ -28,10 +28,13 @@ function tester(a, b) {
 ```
 
 ```dot
+digraph G {
+graph [rankdir=LR, fontsize=10, margin=0.001];
 tester -> noop
 tester [color=blue]
 noop -> tester [shape=arrow]
 noop -> boop
+}
 ```
 
 ## Licence
