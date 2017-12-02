@@ -2,8 +2,14 @@
 Generates dot (graphviz) document from code documentation comments like JSDoc, JavaDoc, PHPDoc
 
 ```bash
-d2d './test/**/*.js'
-d2d './test/**/*.js' > file.dot
+yarn global add dot2doc
+# or
+npm -g i dot2doc
+```
+
+```bash
+dot2doc './test/**/*.js'
+dot2doc './test/**/*.js' > file.dot
 ```
 
 ```javascript

@@ -7,7 +7,7 @@
     "mocha": "^4.0.1"
   },
   "name": "doc2dot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "test": "mocha ./tests/test.test.js"
   },
