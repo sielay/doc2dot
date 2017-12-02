@@ -40,6 +40,7 @@ tester -> noop
 tester [color=blue]
 noop -> tester [shape=arrow]
 noop -> boop
+ { rank="max";   e; }
 }
 ```
 
