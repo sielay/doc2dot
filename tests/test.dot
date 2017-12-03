@@ -2,6 +2,8 @@ digraph G {
 graph [rankdir=LR, fontsize=10, margin=0.001];
 tester -> noop
 tester [color=blue]
+tester -> boop
+foop -> tester
 noop -> tester [shape=arrow]
 noop -> boop
 { rank="max";   e; }

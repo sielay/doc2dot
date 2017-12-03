@@ -16,3 +16,8 @@ function tester(a, b) {
  */
 
  // @dot noop -> boop
+
+ /**
+  * @dot-rule ClassA <- foop
+  * @dot-rule ClassA -> boop
+  */
