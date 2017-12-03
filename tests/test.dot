@@ -1,5 +1,6 @@
 digraph G {
 graph [rankdir=LR, fontsize=10, margin=0.001];
+subgraph clusterA { style=filled;color=gray; foop tester }
 tester -> noop
 tester [color=blue]
 tester -> boop

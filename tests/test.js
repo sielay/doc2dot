@@ -20,4 +20,7 @@ function tester(a, b) {
  /**
   * @dot-rule ClassA <- foop
   * @dot-rule ClassA -> boop
+  * @dot-rule ClassA eachIn A
+  * @dot-rule foop in A
+  * @dot-subgraph A style=filled;color=gray;
   */

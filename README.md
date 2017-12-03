@@ -47,6 +47,21 @@ nodeA [color=red]
 nodeA -> foo
 ```
 
+## Define cluster
+
+```
+@dot-subgraph Name style=whatever;color=other
+@dot-rule foo in A
+@dot-rule {Any} in A
+@dot {Any} B
+```
+
+will result in 
+
+```
+subgraph clusterName { style=whatever;color=other A B }
+```
+
 ## Example
 
 ```javascript
@@ -72,13 +87,18 @@ function tester(a, b) {
  /**
   * @dot-rule ClassA <- foop
   * @dot-rule ClassA -> boop
+  * @dot-rule ClassA eachIn A
+  * @dot-rule foop in A
+  * @dot-subgraph A style=filled;color=gray;
   */
+
 
 ```
 
 ```dot
 digraph G {
 graph [rankdir=LR, fontsize=10, margin=0.001];
+subgraph clusterA { style=filled;color=gray; foop tester }
 tester -> noop
 tester [color=blue]
 tester -> boop
@@ -87,6 +107,7 @@ noop -> tester [shape=arrow]
 noop -> boop
 { rank="max";   e; }
 }
+
 
 ```
 
